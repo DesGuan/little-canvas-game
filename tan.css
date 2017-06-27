@@ -1,0 +1,83 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #666 /*#DEE1E2*/;
+}
+/*loading界面*/
+.w {
+    width: 100%;
+}
+.h {
+    height: 100%;
+}
+.pf {
+    position: fixed;
+}
+.max {
+	z-index: 99999;
+}
+
+.max.loading {
+    background-color: #DEE1E2;
+	/*background-color: #262626;*/
+}
+.max .loading {
+	top: 50%;
+	left: 50%;
+}
+.max .loading.index {
+	margin: -247px 0 0 -329px;
+}
+div.max.loading.lead{
+    z-index: 9999;
+    background-color: rgba(0,0,0,.5);
+}
+div.max.loading.lead>span.lead {
+	top: 50%;
+	left: 50%;
+    width: 500px;
+    height: 300px;
+    margin: -150px 0 0 -250px;
+    background-image: url(lead.png);
+}
+div.game {
+    background-color: #ccc;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    margin: -350px 0 0 -320px;
+}
+div.game>div {
+    position: absolute;
+    bottom: -50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    color: #eee;
+    user-select: none;
+}
+div.game>canvas {
+    border:5px solid #c3c3c3;
+}
+div.game>canvas+div {
+    left: 0;
+    width: 280px;
+    cursor: pointer;
+    background-color: #f1ab44;
+}
+div.game>canvas+div+div {
+    left: 50%;
+    width: 90px;
+    font-size: 30px;
+    margin: 0 0 0 -45px;
+    background-color: #233;
+}
+div.game>canvas+div+div+div {
+    right: 0;
+    width: 280px;
+    cursor: pointer;
+    background-color: rgb(100,139,152);
+}
